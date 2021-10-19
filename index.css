@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap');
+
+:root{
+    --bg-black-900: #000000;
+    --bg-black-100: #dddddd;
+    --bg-black-50: #eff0f4;
+    --text-black-900: #000000;
+    --text-black-600: #555555;
+    --text-black-500: #666666;
+    --text-black-400: #bbbbbb;
+    --outer-shadow: 3px 3px 3px #d0d0d0,-3px -3px -3px #f8f8f8; 
+    --outer-shadow-0: 0 0 0 #d0d0d0,0 0 0 #f8f8f8; 
+    --inner-shadow: inset 3px 3px 3px #d0d0d0,inset -3px -3px -3px #f8f8f8; 
+
+}
+body{
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-y: hidden;
+    background-color: var(--bg-black-100);
+}
+*:not(i){
+    font-family: "Raleway",sans-serif;
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+:before,:after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 70%;
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.outer-shadow{
+    box-shadow: var(--outer-shadow);
+}
+
+/*---------HEADER--------*/
+.header{
+    padding: 30px 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header .logo a{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    color: var(--skin-color);
+    border-radius: 25%;
+    border: 2px solid var(--skin-color);
+    font-weight: 800;
+}
+
+.header .round-btn{
+    height:40px;
+    width:40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition:all 0.3s ease;
+}
+.header .round-btn span{
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color: var(--bg-black-900);
+    position: relative;
+    
+}
+.header .round-btn span:before,
+.header .round-btn span:after{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black-900);
+}
+.header .round-btn span:before{
+    top: -6px;
+}
+.header .round-btn span:after{
+    top: 6px;
+}
+
+/*----------HOME SECTION -------------*/
+.align-items{
+    align-items: center;
+}
+.home-section .full-screen{
+
+    padding: 50px 0;
+    min-height: 50vw;
+    
+}
+.home-section .home-text, 
+.home-section .home-img{ 
+   
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding:  15px;
+
+}
+
+.home-section .home-text p{
+    color: var(--text-black-400);
+    font-size: 18px;
+    text-transform:capitalize;
+    margin: 0;
+}
+.home-section .home-text h2{
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--text-black-600);
+    margin: 0;
+}
+.home-section .home-text h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-black-900);
+    margin: 0;
+    text-transform: capitalize;
+}
+.more-about{
+    border: inset;
+    text-decoration: none;
+    color: var(--skin-color);
+    padding: 10px 25px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 30px;
+    display: inline-block;
+
+}
+.portfolio{
+    border: inset;
+    text-decoration: none;
+    color: var(--skin-color);
+    padding: 10px 25px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.home-section .more-about{
+    margin-top: 30px;
+}
+.home-section .home-img .image{
+    max-width: 450px;
+    display:block;
+    margin: auto;
+    border-radius: 50%;
+
+}
+.home-section .home-img .image img{
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+
+}
+/*---------------Responsiveness----------------*/
+
+@media(max-width : 999px){
+    .container{
+        padding: 0;
+    }
+    .home-text,
+    .home-img{
+        width: 100%;
+    }
+    .home-text{
+        text-align: center;
+    }
+}
+
+@media(max-width : 781px){
+    
+}
+
+@media(max-width : 550px){
+    
+}

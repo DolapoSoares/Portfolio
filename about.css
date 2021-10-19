@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap');
+
+:root{
+    --main-color : #eb4545;
+}
+/*-----------BODY--------*/
+body{
+   min-height: 100vh;
+   background-image: linear-gradient(to bottom right, rgb(248, 207, 214) , rgba(219, 226, 226, 0.952));
+   font-size: 16px;
+   font-family: "Poppins" , sans-serif;
+   font-weight: 300;
+   color: rgb(5, 5, 94);
+   line-height: 1.5;
+   padding: 5vh 15px;
+   overflow-x: hidden;
+   background-attachment: fixed;
+}
+/*------------Button-----------*/
+
+button{
+    font-family: inherit;
+    user-select: none;
+}
+
+
+/*-----------SECTION TITLE*/
+.section-title{
+    padding: 0 15%;
+    width: 50%;
+    text-align: center;
+}
+
+.section-title h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.about-section .about-text{
+    text-align: left;
+    margin: 10px;
+    padding: 20px 0 0 0;
+    float: right;
+}
+.about-text h3{
+    text-transform: capitalize;
+    font-size:  20px;
+    margin: 20px 0;
+}
+
+.about-text .skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text .skill-item{
+    background-color: rgb(252, 249, 249);
+    border: 1px solid whitesmoke;
+    padding: 5px 15px;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+}
+
+.about-tabs{
+    margin-top: 25px;
+}
+
+.about-tabs .tab-item{
+    padding: 2px 0;
+    background-color: transparent;
+    border: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color: rgb(89, 89, 241);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 30px 30px 0;
+    position:relative;
+    opacity: 0.5;
+}
+
+.about-tabs .tab-item:last-child{
+    margin: 0;
+}
+
+.about-tabs .tab-item.active{
+    color: var(--main-color);
+    opacity: 1;
+    cursor: pointer;
+}
+.about-text .timeline{
+    position: relative;
+}
+
+.about-text .timeline::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 5px;
+    background-color: var(--main-color);
+
+}
+
+.about-text .tab-content{
+    padding: 40px 0;
+    display: none;
+}
+
+.about-text .tab-content.active{
+    display: block;
+}
+
+.about-text .timeline-item{
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0 0 40px;
+}
+
+.about-text .timeline-item::before{
+    content: " ";
+    position: absolute;
+    height: 10px;
+    width: 11px;
+    background-color: var(--main-color);
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+
+}
+
+.about-tabs .tab-item:hover::before{
+    width:100%;
+}
+.about-tabs .tab-item.active::before{
+    content: " ";
+    width:100%;
+    background-color: var(--main-color);
+}
+
+.about-text .timeline-item .date{
+    display: block;
+    color: var(--main-color);
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.about-text .timeline-item h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.about-text .timeline-item h4 span{
+    font-weight: 400;
+}
+
+.btn{
+    border-radius: 20px;
+    border: inset;
+    padding: 10px 15px;
+    margin: 0 20px;
+    text-transform: capitalize;
+    left:0;
+    right: 0;
+    cursor: pointer;
+
+
+}
+.below-about a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*----------------Contact Me----------------*/
+
+.row .contact-info{
+    padding: 30px;
+}
+.contact-form,
+.contact-info{
+    width: 50%;
+    padding: 0 15px;
+
+}
+.contact-form .input-group{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form .input-control::placeholder{
+    color: rgb(89, 89, 241);
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.contact-form .input-control{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: ivory;
+    padding: 0 20px;
+    color: rgb(89, 89, 241);
+    border: 1px solid transparent;
+}
+
+.contact-form textarea.input-control{
+    height: 120px;
+    resize: none;
+    padding-top: 15px;
+
+}
+
+.contact-info-item{
+    margin: 0 0 30px;
+    padding: 0 0 0 20px;
+
+}
+
+/*------------------Responsiveness-------------------------*/
+
+@media(max-width : 999px){
+
+}
+
+@media(max-width : 781px){
+    
+}
+
+@media(max-width : 550px){
+    
+}

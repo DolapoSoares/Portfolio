@@ -1,0 +1,8 @@
+:root{
+    --skin-color : #cc3a3b;
+}
+
+.header.outer-btn{
+    box-shadow: var(--text-black-500);
+}
+
